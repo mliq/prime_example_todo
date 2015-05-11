@@ -1,7 +1,7 @@
 var express = require('express')
     , router = express.Router()
     , mongoose = require('mongoose')
-    , Todo = require('../models/todo.js');
+    , Todo = require('../models/Todo.js');
 
 /* GET /todos listing. */
 router.get('/', function(req, res, next) {
