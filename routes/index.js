@@ -5,7 +5,7 @@ var Todo = require('../models/Todo.js');
 var path = require('path');
 
 app.get("/", function(req,res,next){
-  res.sendFile(path.resolve(__dirname, '../views/index.html'));
+  res.sendFile(path.resolve(__dirname, '../views/create.html'));
 });
 
 app.post("/", function(req,res,next){
