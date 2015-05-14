@@ -9,7 +9,7 @@ app.get("/", function(req,res,next){
 
 app.post("/", function(req,res,next){
   Todo.create(req.body, function(err, post){
-    res.sendFile(path.resolve(__dirname, '../views/index.html'));
+    res.redirect('/');
   })
 });
 
